@@ -11,19 +11,68 @@
 </head>
 <body>
   <div id="maindiv">
-    <input type="text" id="searchbar" placeholder="Enter component name...">
+    <div id="topdiv">
+      <select name="filter" id="filterElement">
+        <option value="0">Alphabetical</option>
+        <option value="1">Stock</option>
+        <option value="2">Stock Descending</option>
+      </select>
+      <input type="text" id="searchbar" placeholder="Enter component name...">
+      <button id="loginbutton">Staff Login</button>
+    </div>
+    
     <div id="undersearchbar">
       <div id="listdiv">
-        <select name="items" size="20" id="listbox">  
-            <option> 200K resistor </option>  
+        <select name="items" size="15" id="listbox">  
+            <option> Loading... </option>
         </select>  
+        <button id="addcomponentbutton" disabled>Add Component</button>
+        <button id="removecomponentbutton" disabled>Remove Component</button>
       </div>
       <div id="infobar">
+        <div id="infotopbar">
+          <!-- <img id="infoimage" src="https://o.remove.bg/downloads/ba436687-1ed3-4377-8a41-3adc0e4a7dfb/image-removebg-preview.png" alt=""> -->
+          <h1 id="infoname">Electronics Stock</h1>
+          <!-- <img id="infosymbol" src="https://o.remove.bg/downloads/87d4765f-f6d4-4523-b4f4-c8d8f2d9d8f4/image-removebg-preview.png" alt=""> -->
+        </div>
+        <div id="infobottomarea">
+          <p id="infodesc">Search components to see their stock and position</p>
+          
+          <table id="infotable">
+            <tr>
+              <th class="topleft">Name</th>
+              <td class="topright" id="tableName">Name</td>  
+            </tr>
+            <tr>
+              <th>Description</th>
+              <td id="tableDesc">Description</td>  
+            </tr>
+            <tr>
+              <th>Stock</th>
+              <td id="tableStock">Stock</td>  
+            </tr>
+            <tr>
+              <th class="bottomleft">Location</th>
+              <td class="bottomright" id="tableLocation">Location</td>  
+            </tr>
+          </table>
+        </div>
+        
       </div>
     </div>
   </div>
 
-  <script src="searchbar.js"></script>
+  <script src="util.js"></script>
+
+  <script src="infobar/sidebar.js"></script>
+  <script src="infobar/table.js"></script>
+
+  <script src="searcharea/listbox.js"></script>
+  <script src="searcharea/searchbar.js"></script>
+  
+  <script src="admin/addAndRemoveComponents.js"></script>
+  <script src="admin/login.js"></script>
+  
   <script src="socket.js"></script>
   <script src="script.js"></script>
 </body>

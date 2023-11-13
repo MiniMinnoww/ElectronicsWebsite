@@ -1,24 +1,55 @@
 body {
-  overflow: hidden;
+  overflow: vertical;
+  width: 100%;
+  height: 100%;
+
+  background-color: #A9A9A9;
+
+  height: 100%;
+  width: 100%;
+
+  background-image: url("../images/background.png");
+  background-size: 8px 8px;
+  background-repeat: repeat;
 }
 
 #maindiv {
   display: flex;
   align-items: center;
-  height: 100%;
+  height: 90%;
   width: 100%;
   flex-direction: column;
 }
 
-#searchbar {
+#topdiv {
   flex: 1;
+  align-items: center;
+  display: flex;
   width: 90%;
+}
+
+#searchbar {
+  flex: 6;
+  border-radius: 50px;
+  width: 90%;
+  padding: 10px;
+}
+
+#addcomponentbutton, #removecomponentbutton {
+  border-radius: 20px;
+  padding: 10px;
+}
+
+#loginbutton {
+  flex: 1;
+  border-radius: 50px;
+  height: 100%;
   padding: 10px;
 }
 
 #undersearchbar {
   padding: 5px;
-  flex: 10;
+  flex: 3;
   display: flex;
   flex-direction: row;
   width: 90%;
@@ -27,21 +58,114 @@ body {
 #infobar {
   flex: 1;
   width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#infotopbar {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#infoimage {
+  padding-right: 10px;
+  flex: 1;
+  height: 50px;
+}
+
+#infosymbol{
+  padding-left: 10px;
+  flex: 1;
+  height: 50px;
+}
+
+#infoname, #infodesc {
+  flex: 1;
+}
+
+#infobottomarea {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
 }
 
 #listdiv {
+  overflow: visible;
   flex: 1;
   width: 50%;
 }
 
 #listbox {
+  overflow: visible;
   width: 100%;
   padding: 10px;
-  border: solid 1px grey;
+  border: none;
   outline: none;
+  background: transparent;
 }
 
 .listboxOption {
   padding: 10px 10px;
   border-top: solid 1px black;
+  transition: transform .2s;
+}
+
+.listboxOption:hover {
+  transform: scale(1.05);
+  transform: 
+}
+
+td, th, tr {
+  min-width: 40%;
+  border: solid 1px black;
+  height: auto;
+  padding: 5px;
+}
+
+#infotable {
+  flex: 5;
+}
+
+.topleft {
+  border-top-left-radius: 20px;
+}
+
+.topright {
+  border-top-right-radius: 20px;
+}
+
+.bottomleft {
+  border-bottom-left-radius: 20px;
+}
+
+.bottomright {
+  border-bottom-right-radius: 20px;
+}
+
+.custom-select {
+  position: relative;
+  display: inline-block;
+}
+
+.filter-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  background-color: #ccc; /* Customize the background color */
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#filterElement {
+  flex: 0.25;
+  border-radius: 50px;
+  padding: 10px;
+  background-color: transparent;
 }

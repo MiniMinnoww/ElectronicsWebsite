@@ -1,26 +1,13 @@
-200kΩ Resistor,A device that limits or regulates the flow of electric current in a circuit.,42
-10μF Capacitor,A device that stores electrical energy in an electric field.,73
-Transistor,An active semiconductor device that can be used for amplification, switching, or signal modulation.,18
-LED (Light Emitting Diode),A semiconductor device that emits light when an electric current is applied.,65
-Integrated Circuit (IC),A set of interconnected electronic components on a small semiconductor chip.,91
-Diode,A two-terminal electronic component that allows current to flow in one direction only.,37
-5mH Inductor,A passive two-terminal electrical component that stores energy in a magnetic field.,54
-Microcontroller,A compact integrated circuit designed to govern a specific operation in an embedded system.,82
-470Ω Resistor,A device that limits or regulates the flow of electric current in a circuit.,29
-22μF Capacitor,A device that stores electrical energy in an electric field.,88
-NPN Transistor,An NPN-type bipolar junction transistor for amplification or switching.,14
-7-segment Display,A display device that can show numerals using seven individual segments.,77
-555 Timer IC,A highly popular integrated circuit used for generating precise time delays.,63
-Schottky Diode,A diode with a low forward voltage drop often used in power applications.,50
-10mH Inductor,A passive two-terminal electrical component that stores energy in a magnetic field.,36
-Arduino Microcontroller,A popular open-source microcontroller board for various projects.,95
-1kΩ Resistor,A device that limits or regulates the flow of electric current in a circuit.,21
-47μF Capacitor,A device that stores electrical energy in an electric field.,59
-PNP Transistor,A PNP-type bipolar junction transistor for amplification or switching.,27
-RGB LED (Light Emitting Diode),An LED that emits red green and blue light.,72
-Op-Amp (Operational Amplifier),An amplifier with very high open-loop gain and differential inputs.,48
-Zener Diode,A diode designed to operate in the reverse-biased breakdown region.,84
-100mH Inductor,A passive two-terminal electrical component that stores energy in a magnetic field.,68
-Raspberry Pi,A small single-board computer for various applications.,33
-2.2kΩ Resistor,A device that limits or regulates the flow of electric current in a circuit.,79
-100μF Capacitor,A device that stores electrical energy in an electric field.,45
+4001 NOR gate IC,four 2 input NOR gate IC,40,0|1
+4008 4-bit binary full adder IC,4-bit binary full adder IC,28,0|1
+4011 NAND gate IC,four two input NAND gate IC,70,0|1
+4012 4 input NAND gate IC,4012 4 input NAND gate IC,5,0|1
+4013 D-type flip-flop IC,desc,6,0|1
+4015 Two 4-bit shift register IC,Two 4-bit shift register IC,30,0|1
+4016 Quad Bilateral switch,Quad Bilateral switch,12,0
+4017 Divide by 10 synchronus counter,divide by 10 synchronus counter,2,0|1
+4021 8-bit shift register,8bit shift register,5,0|1
+4023 3 input NAND gate,three 3 input NAND gate IC,40,0
+4024 Binary ripple counter,7 -stage binary ripple counter IC,50,0
+4026 Decade Counter with 7 Segment Driver,decade counter with 7-segment driver,7,0|1
+4027 JK flipflop,JK flipflop,5,0

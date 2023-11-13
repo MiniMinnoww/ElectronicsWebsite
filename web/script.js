@@ -1,26 +1,6 @@
-const listbox = document.getElementById("listbox")
-
+// A list of every component client side.
 let allComponents = {}
 
-let listboxElements = {}
-
-const reloadListbox = (data) => {
-  // Remove all children of the listbox element
-  while (listbox.firstChild) listbox.firstChild.remove()
-
-  listboxElements = {}
-
-  for (let component of data) {
-    let element = document.createElement("option")
-    element.classList.add("listboxOption")
-    element.innerHTML = `${component.name} - ${component.stock} left`
-    listbox.appendChild(element)
-    
-    listboxElements[element] = component
-  }
-}
-
-
-
+let downloadButton = document.getElementById("")
 // Tell the server to send us the data
 loadAllData()
