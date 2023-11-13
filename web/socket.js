@@ -14,6 +14,7 @@ socket.on("s2c_veifyPassword", () => {
   loginButton.innerHTML = "Admin"
   addComponentButton.disabled = false
   removeComponentButton.disabled = false
+  downloadButton.disabled = false
 })
 
 socket.on("s2c_revokeAdmin", () => {
@@ -22,6 +23,7 @@ socket.on("s2c_revokeAdmin", () => {
   loginButton.innerHTML = "Staff Login"
   addComponentButton.disabled = true
   removeComponentButton.disabled = true
+  downloadButton.disabled = true
 })
 
 const verifyPassword = (password) => {

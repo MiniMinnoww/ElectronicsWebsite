@@ -35,9 +35,17 @@ body {
   padding: 10px;
 }
 
-#addcomponentbutton, #removecomponentbutton {
+#addcomponentbutton:not([disabled]), 
+#removecomponentbutton:not([disabled]),
+#downloadButton:not([disabled]) {
   border-radius: 20px;
   padding: 10px;
+}
+
+#addcomponentbutton[disabled], 
+#removecomponentbutton[disabled], 
+#downloadButton[disabled]{
+  display: none;
 }
 
 #loginbutton {
