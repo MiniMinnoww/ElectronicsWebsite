@@ -35,6 +35,7 @@ io.on('connection', (socket) => {
       return
     }
     let component = d.component
+    if (!component || !component.name || !component.desc || !component.stock) return
 
     for (let index in data) {
       if (data[index].name == component.name) {
@@ -60,7 +61,8 @@ io.on('connection', (socket) => {
     for (let index in data) {
       if (data[index].name == component.name) return // Already exists!
     }
-
+    if (!component || !component.name || !component.desc || !component.stock) return
+    
     data.push(component)
     saveAll()
 
@@ -72,6 +74,8 @@ io.on('connection', (socket) => {
       socket.emit("s2c_revokeAdmin")
       return
     }
+    if (!component || !component.name || !component.desc || !component.stock) return
+    
     for (let index in data) {
       if (data[index].name == component.name) {
         data.splice(index, 1)
